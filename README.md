@@ -1,8 +1,8 @@
 # verygoods-bookmarklet (unofficial)
 
-A rebuild of the [Very Goods](https://verygoods.co) "save a product" [bookmarklet](https://verygoods.co/bookmarklet) that works in more modern browsers. Not affiliated with verygoods.co in any way (but do love their stuff).
+A rebuild of the [Very Goods](https://verygoods.co) "save a product" [bookmarklet](https://verygoods.co/bookmarklet) that works in more modern browsers. Not affiliated with verygoods.co in any way (but I do love their stuff).
 
-**Install:** open the [install page](https://mrmartinotti.github.io/verygoods-bookmarklet/) and drag the link to your bookmarks bar. (GitHub strips `javascript:` links from READMEs, which is the only reason that the page exists.) Or copy the contents of [`dist/bookmarklet.txt`](dist/bookmarklet.txt) into a new bookmark's URL field.
+**Install:** open the [install page](https://mrmartinotti.github.io/verygoods-bookmarklet/) and drag the link to your bookmarks bar. (GitHub strips `javascript:` links from READMEs, which is the only reason why the page exists.) Or copy the contents of [`dist/bookmarklet.txt`](dist/bookmarklet.txt) into a new bookmark's URL field.
 
 **Use:** on a product page, scroll the photos into view, click the bookmark, pick an image and product settings in the popup. You will need to be signed in at verygoods.co in the same browser. If the popup comes up empty, click the bookmark again — it re-sends to the open popup.
 
@@ -10,7 +10,7 @@ A rebuild of the [Very Goods](https://verygoods.co) "save a product" [bookmarkle
 
 If you see this from the official bookmarklet:
 
-> **Third-Party Cookies Required** — It looks like you have disabled third-party cookies.
+> **Third-Party Cookies Required** - It looks like you have disabled third-party cookies.
 
 your browser settings are not the problem. The original works by injecting an `<iframe>` of `verygoods.co` into the shop's page. Inside that iframe, your verygoods.co login cookie is a *third-party* cookie, and every major browser now withholds those by default - Firefox partitions them, Brave blocks them, and Chrome drops any cookie that doesn't explicitly opt in. No series of setting on our side reliably gets around all three.
 
